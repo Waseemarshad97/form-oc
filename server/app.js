@@ -10,7 +10,7 @@ const app = express();
 
 const uri = `${process.env.MONGODB_URL}`;
 console.log(uri);
-const password = encodeURIComponent("Rasiyacpp@1234");
+const password = encodeURIComponent(process.env.MONGODB_SECRET);
 
 const connectDB = async () => {
   try {
