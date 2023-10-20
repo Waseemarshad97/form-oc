@@ -8,8 +8,6 @@ require("dotenv").config();
 const authRoutes = require("./routes/authRoutes");
 const app = express();
 
-const uri = `${process.env.MONGODB_URL}`;
-console.log(uri);
 const password = encodeURIComponent(process.env.MONGODB_SECRET);
 
 const connectDB = async () => {
